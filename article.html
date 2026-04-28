@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Article - My Daily Journal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="icon" href="img/logo.png" />
+    <style>
+      :root {
+        --bg-blue: #f0f7ff; 
+        --accent-blue: #5a91cc; 
+        --deep-blue: #2c3e50; 
+      }
+      body { 
+        background-color: var(--bg-blue); 
+        color: var(--deep-blue);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      }
+
+      .navbar { background-color: var(--accent-blue) !important; }
+    
+      .card { 
+        border: none; 
+        background-color: #ffffff; 
+        border-radius: 15px; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(90, 145, 204, 0.2);
+      }
+      .img-card-custom {
+        border-radius: 15px 15px 0 0;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .footer { background-color: #ffffff; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-journal-bookmark-fill me-2"></i>MY JOURNAL.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="article.html">ARTICLE</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">GALLERY</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="article" class="py-5">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-5 display-4">DAILY STORIES</h1>
+        
+        <div class="row g-4 justify-content-center">
+          
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+              <img src="img/UDIN 2.jpeg" class="card-img-top img-card-custom" alt="UDIN 1" />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">MISI PERTAMA</h5>
+                <p class="card-text small text-muted">Petualangan seru si Pemula menempuh pendidikan di bangku perkuliahan.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+              <img src="img/UDIN 3.jpeg" class="card-img-top img-card-custom" alt="UDIN 2" />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">REBAHAN ESTETIK</h5>
+                <p class="card-text small text-muted">Mencari spot cahaya matahari terbaik untuk mengabadikan moment yang beegitu penting bagi si Pemula.</p>
+                <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+              <img src="img/UDIN 4.jpg" class="card-img-top img-card-custom" alt="UDIN 3" />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">ACARA PERTAMA</h5>
+                <p class="card-text small text-muted">Kisah dilematis si Pemula saat berhadapan dengan lingkungan kampus.</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 hour ago</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+              <img src="img/UDIN.jpeg" class="card-img-top img-card-custom" alt="Cat 4" />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">MENYIAPKAN ACARA</h5>
+                <p class="card-text small text-muted">Si Pemula yang harus 'lembur' demi menyiapkan acara di kampus.</p>
+                <p class="card-text"><small class="text-muted">Last updated 2 hours ago</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+              <img src="img/lari.jpg" class="card-img-top img-card-custom" alt="lari" />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">ZOOMIES MALAM</h5>
+                <p class="card-text small text-muted">Olahraga lari mendadak di jam 2 pagi yang sangat tidak diperlukan.</p>
+                <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-5 border-top" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="mb-3">
+          <a href="#" class="h2 p-2 text-primary"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="h2 p-2 text-info"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="h2 p-2 text-success"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <div>
+          <p class="fw-bold text-muted">Nadya_A18.2025.00200 &copy; 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
